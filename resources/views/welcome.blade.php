@@ -114,9 +114,8 @@
 <footer class="bg-dark text-center text-white">
     <!-- Grid container -->
     <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: #ff7;">
-      © 2020 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">Needynnada</a>
+    <div class="text-center p-3" style="background-color: #0000000;">
+      <a class="text-white" href="https://mdbootstrap.com/"> © 2020 Copyright: Needynnada</a>
     </div>
     <!-- Copyright -->
   </footer>

@@ -8,7 +8,7 @@
         <meta name="author" content="" />
         <title></title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
-        
+
         <link href="{{ asset ('css/styles.css') }}" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     </head>
@@ -32,7 +32,7 @@
       @endif
 
         <main class="form-signin">
-            <h1 class="h3 mb-3 fw-normal text-center">Please login</h1>
+            <h1 class="h3 mb-3 fw-normal text-center"> Needynnada login</h1>
             <form action="/login" method="post">
               @csrf
               <div class="form-floating">

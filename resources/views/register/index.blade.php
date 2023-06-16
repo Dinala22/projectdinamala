@@ -8,7 +8,7 @@
         <meta name="author" content="" />
         <title></title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
-        
+
         <link href="{{ asset ('css/styles.css') }}" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     </head>
@@ -25,7 +25,7 @@
                         @error('name')
                         <div class="invalid-feedback">
                           {{ $message }}
-                        </div> 
+                        </div>
                         @enderror
                     </div>
 
@@ -35,10 +35,10 @@
                       @error('email')
                       <div class="invalid-feedback">
                         {{ $message }}
-                      </div> 
+                      </div>
                       @enderror
                     </div>
-    
+
                     <div class="form-group mb-3">
                         <label for="role">Role</label>
                         <select name="role_id" id="role_id">
@@ -47,15 +47,15 @@
                             @endforeach
                         </select>
                         @error('role') <span class="text-danger">{{$message}}</span> @enderror
-                    </div> 
-                    
+                    </div>
+
                   <div class="form-floating mb-3">
                     <input type="password" name='password' class="form-control rounded-bottom @error('password') is-invalid" @enderror  id="password" placeholder="Password">
                     <label for="password">Password</label>
                     @error('password')
                     <div class="invalid-feedback">
                       {{ $message }}
-                    </div> 
+                    </div>
                     @enderror
                   </div>
                   <button class="w-100 btn btn-lg btn-primary" type="submit">Register</button>
@@ -66,7 +66,7 @@
               </main>
         </div>
     </div>
-    
+
 
         </div>
         <script src="{{ asset('https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js') }}" crossorigin="anonymous"></script>
