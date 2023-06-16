@@ -12,7 +12,7 @@
     <section id="navbar">
             <nav class="navbar navbar-expand-lg bg-dark ">
                 <div class="container">
-                  <a class="navbar-brand text-white" href="#">Toko Bom</a>
+                  <a class="navbar-brand text-white" href="#">Needynnada</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -22,13 +22,13 @@
                         <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link text-white" href="#content">Prducts</a>
+                        <a class="nav-link text-white" href="#content">Products</a>
                       </li>
                       <li class="nav-item ">
                         <a class="nav-link text-white " href="#footer">About</a>
                       </li>
                     </ul>
-                    <form class="d-flex" role="search" action="/login">  
+                    <form class="d-flex" role="search" action="/login">
                         <button class="btn btn-outline-primary" type="submit">Login</button>
                     </form>
                   </div>
@@ -114,9 +114,9 @@
 <footer class="bg-dark text-center text-white">
     <!-- Grid container -->
     <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    <div class="text-center p-3" style="background-color: #ff7;">
       © 2020 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">Anjay</a>
+      <a class="text-white" href="https://mdbootstrap.com/">Needynnada</a>
     </div>
     <!-- Copyright -->
   </footer>

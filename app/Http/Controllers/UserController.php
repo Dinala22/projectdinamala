@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Role;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -19,7 +20,7 @@ class UserController extends Controller
         return view('users.index', [
             'users' => $users
         ]);
-        
+
     }
 
     /**
@@ -31,7 +32,7 @@ class UserController extends Controller
     {
         $roles = Role::all();
         return view('users.create',compact('roles'));
-        
+
     }
 
     /**
@@ -48,6 +49,7 @@ class UserController extends Controller
             'password' => 'required|confirmed|min:8',
             'role_id' => 'required'
         ]);
+        $validated['password'] = Hash::make($validated['password']);
         User::create($validated);
         return redirect()->route('users.index');
     }
@@ -90,6 +92,7 @@ class UserController extends Controller
             'password' => 'required|confirmed|min:8',
             'role_id' => 'required'
         ]);
+        $validated['password'] = Hash::make($validated['password']);
         $user->update($validated);
         return redirect()->route('users.index');
     }

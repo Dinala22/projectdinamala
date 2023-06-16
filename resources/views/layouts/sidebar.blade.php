@@ -1,4 +1,3 @@
-
 <div id="layoutSidenav">
     <div id="layoutSidenav_nav">
         <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
@@ -15,6 +14,7 @@
                         <div class="sb-nav-link-icon"><i class="fas fa-image"></i></div>
                         Sliders
                     </a>
+                    @if(Auth::check() && Auth::user()->roles->role_name == 'admin')
                     <div class="sb-sidenav-menu-heading">MANAGEMENT</div>
                     <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                         <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
@@ -24,7 +24,7 @@
                     <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav">
                             <a class="nav-link" href="/categories">Category</a>
-                            <a class="nav-link" href="{{route ('products.index')}}">Products</a>
+                            <a class="nav-link" href="{{ route ('products.index') }}">Products</a>
                         </nav>
                     </div>
                     <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
@@ -38,13 +38,12 @@
                             <a class="nav-link" href="{{ route('users.index') }}">Users</a>
                         </nav>
                     </div>
-
+                    @endif
                 </div>
             </div>
             <div class="sb-sidenav-footer">
                 <div class="small">Logged in as:</div>
-                Start Bootstrap
+                {{ Auth::user()->name }}
             </div>
         </nav>
     </div>
-
