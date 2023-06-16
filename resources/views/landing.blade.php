@@ -79,7 +79,7 @@
                           <h5 class="card-title">{{ $product->nama }}</h5>
                           <p class="card-text">{{ $product->harga }}</p>
                           <p class="card-text">{{ $product->deskripsi }}</p>
-                          <a href="#" class="btn btn-primary">Beli</a>
+                          <a href="https://wa.me/6281391234446" class="btn btn-warning fw-bold">Buy Now</a>
                         </div>
                       </div>
                 </div>
@@ -94,8 +94,18 @@
     <!-- Grid container -->
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color:#000000;">
-        © 2023 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/"> Needynnada by Dinamala</a>
+        ABOUT
+        <p>
+        <a class="text-white" href="https://instagram.com/needynnada_?igshid=MzRlODBiNWFlZA=="> INSTAGRAM : @needynnada_</a>
+        </p>
+        <p>
+        <a class="text-white" href="https://wa.me/6281391234446"> PHONE : 081391234446</a>
+        </p>
+        <p>
+        <a class="text-white" href="https://goo.gl/maps/5RGG1EYw644m3HaU8"> OFLINE STORE : Bogor</a>
+        </p>
+        © 2023 Copyright: by Dinamala
+        <a class="text-white" href="http://needynnada.online/"> Needynnada</a>
     </div>
     <!-- Copyright -->
   </footer>
