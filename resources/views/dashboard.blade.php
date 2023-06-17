@@ -36,6 +36,7 @@
                                         <a class="small text-white text-decoration-none" href="#"></a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
+
                                 </div>
                         </div>
                 </div>

@@ -8,7 +8,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <h2>Tambah</h2>
+                    <h2>Edit</h2>
                     <div class="form-group mb-2">
                         <label for="caption">Caption</label>
                         <textarea type="text" class="form-control @error('caption') is-invalid @enderror" id="caption" placeholder="caption" name="caption">{{ $slider->caption }}</textarea>
@@ -52,7 +52,7 @@
         oFReader.onload = function(oFREvent){
         imgPreview.src = oFREvent.target.result;
   }
-   
+
 }
 </script>
 @stop
